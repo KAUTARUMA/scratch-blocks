@@ -298,7 +298,7 @@ Blockly.Blocks['looks_size'] = {
 Blockly.Blocks['looks_effect_value'] = {
   init: function() {
     this.jsonInit({
-      "message0": "value of %1 effect",
+      "message0": Blockly.Msg.LOOKS_EFFECT_VALUE,
       "args0": [
         {
           "type": "field_dropdown",
