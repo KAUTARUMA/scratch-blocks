@@ -411,7 +411,7 @@ Blockly.Blocks['sensing_timeScale'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "time scale",
+      "message0": "game speed",
       "category": Blockly.Categories.sensing,
       "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_number"]
