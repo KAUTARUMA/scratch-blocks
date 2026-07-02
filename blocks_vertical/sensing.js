@@ -404,6 +404,21 @@ Blockly.Blocks['sensing_resettimer'] = {
   }
 };
 
+Blockly.Blocks['sensing_timeScale'] = {
+  /**
+   * Block to report timeScale
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "time scale",
+      "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
+      "extensions": ["colours_sensing", "output_number"]
+    });
+  }
+};
+
 Blockly.Blocks['sensing_of_object_menu'] = {
   /**
    * "* of _" object menu.
