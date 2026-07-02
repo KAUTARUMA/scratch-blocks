@@ -354,6 +354,8 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '<block type="sensing_timer" id="sensing_timer"></block>' +
     '<block type="sensing_resettimer" id="sensing_resettimer"></block>' +
     '<block type="sensing_timeScale" id="sensing_timeScale"></block>' +
+    '<block type="sensing_deltaTime" id="sensing_deltaTime"></block>' +
+    '<block type="sensing_fps" id="sensing_fps"></block>' +
     '<block type="sensing_of" id="sensing_of">' +
       '<value name="OBJECT">' +
         '<shadow type="sensing_of_object_menu"></shadow>' +
