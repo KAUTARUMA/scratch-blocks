@@ -404,6 +404,51 @@ Blockly.Blocks['sensing_resettimer'] = {
   }
 };
 
+Blockly.Blocks['sensing_timeScale'] = {
+  /**
+   * Block to report timeScale
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "game speed",
+      "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
+      "extensions": ["colours_sensing", "output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['sensing_deltaTime'] = {
+  /**
+   * Block to report timeScale
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "delta time",
+      "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
+      "extensions": ["colours_sensing", "output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['sensing_fps'] = {
+  /**
+   * Block to report timeScale
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "fps",
+      "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
+      "extensions": ["colours_sensing", "output_number"]
+    });
+  }
+};
+
 Blockly.Blocks['sensing_of_object_menu'] = {
   /**
    * "* of _" object menu.

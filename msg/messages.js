@@ -119,6 +119,7 @@ Blockly.Msg.LOOKS_CLEARGRAPHICEFFECTS = 'clear graphic effects';
 Blockly.Msg.LOOKS_CHANGESIZEBY = 'change size by %1';
 Blockly.Msg.LOOKS_SETSIZETO = 'set size to %1 %';
 Blockly.Msg.LOOKS_SIZE = 'size';
+Blockly.Msg.LOOKS_EFFECT_VALUE = 'value of %1 effect';
 Blockly.Msg.LOOKS_CHANGESTRETCHBY = 'change stretch by %1';
 Blockly.Msg.LOOKS_SETSTRETCHTO = 'set stretch to %1 %';
 Blockly.Msg.LOOKS_SWITCHCOSTUMETO = 'switch costume to %1';

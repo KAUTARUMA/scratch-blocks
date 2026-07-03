@@ -295,6 +295,32 @@ Blockly.Blocks['looks_size'] = {
   }
 };
 
+Blockly.Blocks['looks_effect_value'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.LOOKS_EFFECT_VALUE,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "EFFECT",
+          "options": [
+            [Blockly.Msg.LOOKS_EFFECT_COLOR, 'COLOR'],
+            [Blockly.Msg.LOOKS_EFFECT_FISHEYE, 'FISHEYE'],
+            [Blockly.Msg.LOOKS_EFFECT_WHIRL, 'WHIRL'],
+            [Blockly.Msg.LOOKS_EFFECT_PIXELATE, 'PIXELATE'],
+            [Blockly.Msg.LOOKS_EFFECT_MOSAIC, 'MOSAIC'],
+            [Blockly.Msg.LOOKS_EFFECT_BRIGHTNESS, 'BRIGHTNESS'],
+            [Blockly.Msg.LOOKS_EFFECT_GHOST, 'GHOST']
+          ]
+        },
+      ],
+      "category": Blockly.Categories.looks,
+      "checkboxInFlyout": true,
+      "extensions": ["colours_looks", "output_number"]
+    });
+  }
+};
+
 Blockly.Blocks['looks_changestretchby'] = {
   /**
    * Block to change stretch. Does not actually do anything. This is an

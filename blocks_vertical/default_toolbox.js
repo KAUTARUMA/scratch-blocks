@@ -209,6 +209,7 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '<block type="looks_costumenumbername" id="looks_costumenumbername"></block>' +
     '<block type="looks_backdropnumbername" id="looks_backdropnumbername"></block>' +
     '<block type="looks_size" id="looks_size"></block>' +
+    '<block type="looks_effect_value" id="looks_effect_value"></block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_SOUND}" id="sound" colour="#D65CD6" secondaryColour="#BD42BD">' +
     '<block type="sound_play" id="sound_play">' +
@@ -300,6 +301,13 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '<block type="control_if_else" id="control_if_else"></block>' +
     '<block type="control_wait_until" id="control_wait_until"></block>' +
     '<block type="control_repeat_until" id="control_repeat_until"></block>' +
+    '<block type="control_repeat_sec" id="control_repeat_sec">' +
+      '<value name="SECS">' +
+        '<shadow type="math_number">' +
+          '<field name="NUM">1</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
     '<block type="control_stop" id="control_stop"></block>' +
     '<block type="control_start_as_clone" id="control_start_as_clone"></block>' +
     '<block type="control_create_clone_of" id="control_create_clone_of">' +
@@ -345,6 +353,9 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '<block type="sensing_loudness" id="sensing_loudness"></block>' +
     '<block type="sensing_timer" id="sensing_timer"></block>' +
     '<block type="sensing_resettimer" id="sensing_resettimer"></block>' +
+    '<block type="sensing_timeScale" id="sensing_timeScale"></block>' +
+    '<block type="sensing_deltaTime" id="sensing_deltaTime"></block>' +
+    '<block type="sensing_fps" id="sensing_fps"></block>' +
     '<block type="sensing_of" id="sensing_of">' +
       '<value name="OBJECT">' +
         '<shadow type="sensing_of_object_menu"></shadow>' +

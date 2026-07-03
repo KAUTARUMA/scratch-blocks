@@ -327,3 +327,106 @@ Blockly.Blocks['event_whenkeypressed'] = {
     });
   }
 };
+
+Blockly.Blocks['event_whenwinlose'] = {
+  init: function() {
+    this.jsonInit({
+      "id": "event_whenwinlose",
+      "message0": "when game is %1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "WHENWINLOSEMENU",
+          "options": [
+            ['won', 'WIN'],
+            ['lost', 'LOSE']
+          ]
+        }
+      ],
+      "category": Blockly.Categories.event,
+      "extensions": ["colours_event", "shape_hat"]
+    });
+  }
+};
+
+Blockly.Blocks['event_wingame'] = {
+  /**
+   * Block to send a broadcast.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "id": "event_wingame",
+      "message0": "%1 win game",
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "green-flag.svg",
+          "width": 24,
+          "height": 24,
+          "alt": "flag"
+        }
+      ],
+      "category": Blockly.Categories.event,
+      "extensions": ["colours_event", "shape_statement"]
+    });
+  }
+};
+
+
+Blockly.Blocks['event_losegame'] = {
+  /**
+   * Block to send a broadcast.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "id": "event_wingame",
+      "message0": "%1 lose game",
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "icons/control_stop.svg",
+          "width": 24,
+          "height": 24,
+          "alt": "stop"
+        }
+      ],
+      "category": Blockly.Categories.event,
+      "extensions": ["colours_event", "shape_statement"]
+    });
+  }
+};
+
+
+Blockly.Blocks['event_isgameover'] = {
+  /**
+   * Block to send a broadcast.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "is game over?",
+      "category": Blockly.Categories.event,
+      "checkboxInFlyout": true,
+      "extensions": ["colours_event", "output_boolean"]
+    });
+  }
+};
+
+Blockly.Blocks['event_gamestate'] = {
+  /**
+   * Block to send a broadcast.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "id": "event_gamestate",
+      "message0": "game state",
+      "category": Blockly.Categories.event,
+      "checkboxInFlyout": true,
+      "extensions": ["colours_event", "output_string"]
+    });
+  }
+};
+
